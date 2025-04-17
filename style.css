@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:"Roboto";
+}
+#container{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    height:100vh;
+    grid-template-areas: "sidebar header"
+    "sidebar main-content"
+    ;
+}
+/*HEADER*/
+#header{
+    background-color: white;
+    grid-area:header;
+    padding:20px 40px;
+}
+#row1{
+    display:grid;
+    grid-template-columns: 2.5fr 0.5fr;
+    height:64px;
+    gap:20px;
+}
+input{
+    border:none;
+    background-color: hsl(0, 0%, 90%);
+    height:50%;
+    width:100%;
+    border-radius:10px;
+    max-width: 800px;
+    font-size:1.5rem;
+}
+#row1 img{
+    height:4rem;
+}
+#row1 #username{
+    font-weight:bold;
+    font-size:1.5rem;
+}
+#row1-left{
+    display:flex;
+    align-items: center;
+}
+#row1-right{
+    min-width: 300px;
+    gap:10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+#row1 svg{
+    height:2rem;
+}
+#row2{
+    display: flex;
+    justify-content: space-between;
+}
+#row2 img {
+    height:6rem;
+}
+#row2-left{
+    display:flex;
+}
+#user-greeting{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+}
+#row2-right{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+button{
+    background-color:rgb(0, 140, 255);
+    color:white;
+    border:none;
+    padding:10px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+/*SIDEBAR*/
+#sidebar{
+    padding:10px;
+    background-color:rgb(0, 140, 255);
+    grid-area: sidebar;
+    color:white
+}
+.sidebar-div{
+    margin-bottom:3rem;
+}
+.link-1{
+    font-size:2rem;
+    font-weight: bold;
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+
+#dashboard-svg{
+    height:4rem;
+}
+.link{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+#sidebar svg{
+    fill:white;
+    height:2.5rem;
+}
+.sidebar-div{
+    font-size: 1.5rem;
+}
+/*MAIN-CONTENT*/
+#main-content{
+    background-color:hsl(0, 0%, 90%);
+    grid-area:main-content;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    padding:20px;
+}
+#projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.project-tab{
+    max-height: 250px;
+    overflow: auto;
+    width:50%;
+    background-color:white;
+    padding:2rem;
+    max-width: 300px;
+    border-radius: 20px; 
+}
+
+.project-tab-content{
+    display: flex;
+    flex-direction: column;
+}
+.project-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.project-description{
+    color:gray;
+}
+.controls{
+    display: flex;
+    gap:2rem;
+    justify-content: right;
+}
+.project-tab svg{
+    height:1.5rem;
+}
