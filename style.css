@@ -121,12 +121,17 @@ button{
     background-color:hsl(0, 0%, 90%);
     grid-area:main-content;
     display:grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 70% 30%;
     padding:20px;
+}
+.column{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
 }
 #projects{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
 }
 .project-tab{
     max-height: 250px;
@@ -136,6 +141,7 @@ button{
     padding:2rem;
     max-width: 300px;
     border-radius: 20px; 
+    border-left:10px solid yellow
 }
 
 .project-tab-content{
